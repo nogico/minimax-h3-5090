@@ -2,6 +2,7 @@ FROM pytorch/pytorch:2.10.0-cuda13.0-cudnn9-runtime
 
 ENV DEBIAN_FRONTEND=noninteractive \
     PIP_NO_CACHE_DIR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1 \
     PYTHONUNBUFFERED=1 \
     HF_HOME=/opt/hf-cache \
     HF_XET_HIGH_PERFORMANCE=1 \
