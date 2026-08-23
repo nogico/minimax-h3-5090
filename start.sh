@@ -39,5 +39,5 @@ echo "[4/4] Starting ComfyUI on port 8188..."
 cd /opt/ComfyUI
 
 exec python main.py \
-    --listen 0.0.0.0 \
+    --listen \
     --port 8188
